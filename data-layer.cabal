@@ -1,0 +1,49 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: e4fe10b262ab6ac82063cc61fa71cd4ea215b4ed1008dddb34224043297e096e
+
+name:           data-layer
+version:        1.0.13
+synopsis:       Data layering utilities. Layer is a data-type which wrapps other one, but keeping additional information. If you want to access content of simple newtype object, use Lens.Wrapper instead.
+category:       Data
+stability:      experimental
+homepage:       https://github.com/https://github.com/wdanilo/layer#readme
+bug-reports:    https://github.com/https://github.com/wdanilo/layer/issues
+author:         Wojciech Danilo
+maintainer:     Wojciech Danilo <wojciech.danilo@gmail.com>
+license:        Apache-2.0
+license-file:   LICENSE
+build-type:     Simple
+
+source-repository head
+  type: git
+  location: https://github.com/https://github.com/wdanilo/layer
+
+library
+  exposed-modules:
+      Data.Abstract_OLD
+      Data.Layer_OLD
+      Data.Layer_OLD.Cover_OLD
+      Data.Layer_OLD.Immersed
+      Old.Data.Attr
+      Old.Data.Prop
+  other-modules:
+      Paths_data_layer
+  hs-source-dirs:
+      src
+  default-extensions: ConstraintKinds DataKinds DefaultSignatures DeriveDataTypeable DeriveFoldable DeriveFunctor DeriveGeneric DeriveTraversable DoAndIfThenElse EmptyDataDecls FlexibleContexts FlexibleInstances GeneralizedNewtypeDeriving InstanceSigs LambdaCase MultiParamTypeClasses OverloadedStrings StandaloneDeriving TemplateHaskell TupleSections TypeOperators ViewPatterns TypeFamilies
+  ghc-options: -Wall -O2
+  build-depends:
+      base
+    , convert
+    , data-construction
+    , deepseq
+    , ghc-prim
+    , impossible
+    , lens
+    , lens-utils
+  default-language: Haskell2010
